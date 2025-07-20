@@ -4,7 +4,7 @@ A simple and powerful command-line tool running on ESP32 that allows users to in
 
 ---
 
-##  Features
+## Features
 
 * Wi-Fi scan & connect
 * GPIO read/write
@@ -24,7 +24,7 @@ A simple and powerful command-line tool running on ESP32 that allows users to in
 
 ## ⬇ How to Flash
 
-The following `.bin` files should be present in the repository:
+The following `.bin` files should be present in the repository inside /bin:
 
 ```
 esp-shell.ino.bootloader.bin
@@ -32,8 +32,8 @@ esp-shell.ino.partitions.bin
 esp-shell.ino.bin
 ```
 
-### Step 1: Erase Flash (Optional but Recommended)
-> **Caution** your flash memory will be erased
+### Step 1: Erase Flash (Optional but Recommended) 
+## Run this commands inside the root folder where the bin files are present
 
 #### On Linux/macOS
 
@@ -68,7 +68,22 @@ python -m esptool --chip esp32 --port COM7 --baud 460800 write-flash ^
 ```
 
 > Replace `/dev/ttyUSB0` with your actual COM port on Linux/macOS and `COM7` with the appropriate COM port on Windows.
-> Make sure to run this commands in terminal where the files of the current repo are present
+
+Alternatively, you can use the provided scripts:
+
+### Flash Scripts
+
+#### Linux/macOS
+
+```bash
+./flash.sh /dev/ttyUSB0
+```
+
+#### Windows
+
+```cmd
+flash.bat COM7
+```
 
 ---
 
@@ -76,7 +91,7 @@ python -m esptool --chip esp32 --port COM7 --baud 460800 write-flash ^
 
 Once flashed:
 
-1. Open a serial monitor at baud rate `115200`. (in the arduinoIDE)
+1. Open a serial monitor at baud rate `115200`.
 2. Type `help` to see available commands.
 
 ### Sample Commands
@@ -99,10 +114,8 @@ gpio_write 5 1
 
 ---
 
-##  Contributing
+## Contributing
 
 Feel free to fork and PR!
 
 ---
-
-
