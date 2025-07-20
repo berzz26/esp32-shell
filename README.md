@@ -22,7 +22,7 @@ A simple and powerful command-line tool running on ESP32 that allows users to in
 
 ---
 
-## ⬇ How to Flash
+## How to Flash
 
 The following `.bin` files should be present in the repository inside /bin:
 
@@ -33,7 +33,7 @@ esp-shell.ino.bin
 ```
 
 ### Step 1: Erase Flash (Optional but Recommended) 
-## Run this commands inside the root folder where the bin files are present
+## Run these commands inside the root folder where the bin files are present
 
 #### On Linux/macOS
 
